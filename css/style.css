@@ -541,3 +541,9 @@ main { flex: 1; }
   .journal-entry { grid-template-columns: 1fr; gap: 0.5rem; }
   .footer { padding: 1.25rem; }
 }
+.entry-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem 0;
+  display: block;
+}
