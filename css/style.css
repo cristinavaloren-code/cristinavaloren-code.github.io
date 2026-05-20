@@ -524,6 +524,17 @@ main { flex: 1; }
   color: var(--grey);
 }
 
+/* ── ENTRY IMAGES ────────────────────────── */
+
+.entry-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--grey-lt);
+}
+
 /* ── RESPONSIVE ──────────────────────────── */
 
 @media (max-width: 700px) {
@@ -540,10 +551,4 @@ main { flex: 1; }
   .project-card { border-right: none; }
   .journal-entry { grid-template-columns: 1fr; gap: 0.5rem; }
   .footer { padding: 1.25rem; }
-}
-.entry-image {
-  width: auto;
-  max-width: 300px;
-  margin: 1rem 0;
-  display: block;
 }
