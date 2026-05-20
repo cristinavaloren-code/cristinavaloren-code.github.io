@@ -537,6 +537,7 @@ main { flex: 1; }
   border: 1px solid var(--grey-lt);
   box-shadow: 2px 2px 0px var(--grey-lt);
 }
+
 /* ── RESPONSIVE ──────────────────────────── */
 
 @media (max-width: 700px) {
@@ -553,4 +554,48 @@ main { flex: 1; }
   .project-card { border-right: none; }
   .journal-entry { grid-template-columns: 1fr; gap: 0.5rem; }
   .footer { padding: 1.25rem; }
+}
+
+/* ── JOURNAL ENHANCEMENTS ────────────────── */
+
+/* Left column wrapper for date + mood */
+.entry-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.25rem;
+}
+
+/* E — Mood marker */
+.entry-mood {
+  display: inline-block;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--black);
+  color: var(--black);
+  width: fit-content;
+}
+
+.entry-mood.school   { border-color: #333; color: #333; }
+.entry-mood.ai       { border-color: var(--red); color: var(--red); }
+.entry-mood.win      { background: var(--black); color: var(--white); border-color: var(--black); }
+.entry-mood.personal { border-color: var(--grey); color: var(--grey); }
+.entry-mood.disaster { background: var(--red); color: var(--white); border-color: var(--red); }
+
+/* A — Big lede first paragraph */
+.entry-lede {
+  font-size: 1.2rem;
+  color: var(--black);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+/* B — Highlight spans */
+.highlight {
+  color: var(--red);
+  font-weight: 700;
 }
