@@ -12,7 +12,7 @@
   --black:    #0a0a0a;
   --red:      #e8001c;
   --white:    #ffffff;
-  --grey:     #8a8a8a;
+  --grey:     #636363;
   --grey-lt:  #d8d4ce;
 
   --font-display: 'Bebas Neue', Impact, sans-serif;
@@ -22,6 +22,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
