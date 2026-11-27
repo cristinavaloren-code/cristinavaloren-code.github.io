@@ -716,3 +716,45 @@ main { flex: 1; }
   }
 }
 
+/* PROJECTS PAGE: SPACING AND HIERARCHY */
+
+.page-main:has(.projects-grid) .page-header {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.projects-grid {
+  border-top: 0;
+  margin-top: 0;
+}
+
+.project-desc {
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .page-main:has(.projects-grid) .page-header {
+    padding: 1.75rem 0;
+    gap: 0.75rem;
+  }
+
+  .page-main:has(.projects-grid) .page-header h1 {
+    font-size: clamp(3.5rem, 12vw, 5rem);
+  }
+
+  .page-main:has(.projects-grid) .page-sub {
+    max-width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .projects-grid .project-card {
+    padding: 1.75rem 1rem;
+  }
+
+  .projects-grid .project-meta {
+    margin-bottom: 1.25rem;
+  }
+}
+
+
