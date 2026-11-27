@@ -758,3 +758,127 @@ main { flex: 1; }
 }
 
 
+/* ============================================
+   FEATURED PROJECT: OPPY
+   ============================================ */
+
+/* Remove the redundant border and gap */
+
+.projects-grid {
+  border-top: 0;
+  margin-top: 0;
+}
+
+/* Give Oppy its own full-width section */
+
+.project-card--featured {
+  grid-column: 1 / -1;
+  background: var(--black);
+  color: var(--white);
+  border-right: 0;
+  padding: 3.5rem;
+}
+
+/* Featured heading */
+
+.project-card--featured h2 {
+  color: var(--white);
+  font-size: clamp(5rem, 11vw, 9rem);
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+/* Short description */
+
+.project-card--featured .project-desc {
+  color: #e0ddd8;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+/* Metadata */
+
+.project-card--featured .project-year {
+  color: #c8c3bd;
+}
+
+.project-card--featured .status--active {
+  color: #ff5265;
+  border-color: #ff5265;
+}
+
+/* Skills and tags */
+
+.project-card--featured .project-tags {
+  max-width: 650px;
+}
+
+.project-card--featured .project-tags li {
+  color: #dedad5;
+  border-color: #777;
+  background: transparent;
+}
+
+/* Project link */
+
+.project-card--featured .project-link {
+  display: inline-block;
+  color: #ff5265;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #ff5265;
+  padding-bottom: 0.35rem;
+}
+
+/* Keep featured styling consistent on hover */
+
+.project-card--featured:hover {
+  background: var(--black);
+}
+
+.project-card--featured:hover .project-desc {
+  color: #e0ddd8;
+}
+
+.project-card--featured:hover .project-year {
+  color: #c8c3bd;
+}
+
+.project-card--featured:hover .project-tags li {
+  color: #dedad5;
+  border-color: #777;
+  background: transparent;
+}
+
+/* Remove unwanted side borders after
+   the featured card */
+
+.project-card--featured + .project-card {
+  border-left: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .project-card--featured {
+    padding: 2rem 1.5rem;
+  }
+
+  .project-card--featured h2 {
+    font-size: clamp(4.5rem, 20vw, 7rem);
+  }
+
+  .project-card--featured .project-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .project-card--featured .project-meta {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
