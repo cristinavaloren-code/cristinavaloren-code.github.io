@@ -355,12 +355,11 @@ main { flex: 1; }
 }
 
 /* ── PROJECTS ────────────────────────────── */
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 2px solid var(--black);
-  margin-top: 3rem;
+  border-top: none;
+  margin-top: 0;
 }
 
 .project-card {
